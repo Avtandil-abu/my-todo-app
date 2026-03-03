@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი დავალებები</title>
+</head>
+
+<body class="bg-slate-100 min-h-screen flex flex-col p-10 gap-10 items-center justify-center">
+    <div class="w-full max-w-md bg-white p-6 rounded-2xl shadow-lg">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">ჩემი დავალებები</h1>
+        <div class="flex gap-2 mb-8">
+            <input type="text" id="myInput" placeholder="რა გვაქვს გასაკეთებელი?"
+                class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+            <button id="send-btn"
+                class="bg-blue-600 text-white px-6 py-2 rounded-lg transition-all active:scale-95 hover:bg-blue-700">
+                დამატება
+            </button>
+        </div>
+        <div id="container" class="space-y-3 max-w-md mx-auto"></div>
+    </div>
+    <hr class="my-10">
+    <div id="profile-container" class="flex justify-center items-center w-full py-10"></div>
+    <div id="pricing-container" class="flex justify-center items-center w-full p-10"></div>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

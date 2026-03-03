@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.95) translateY(-10px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.animate-pop {
+    animation: pop-in 0.3s ease-out forwards;
+}
+ @tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+ .card-container {
+    @apply bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center gap-4 w-96 border border-gray-100;
+}
+
+.profile-img {
+    @apply w-24 h-24 rounded-full border-4 border-blue-500 object-cover;
+}
+
+.user-name {
+    @apply text-xl font-bold text-gray-800;
+}
+
+.user-status {
+    @apply text-sm text-green-500 font-medium bg-green-50 px-3 py-1 rounded-full;
+} 
